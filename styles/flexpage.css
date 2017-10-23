@@ -35,6 +35,11 @@ html {
 .menu li:hover {
     background-color: #2b2b2b;
 }
+.menu a{
+    color: #ffffff;
+    text-decoration: none;
+    text-decoration: underline;
+}
 .aside {
     background-color: #2b2b2b;
     padding: 15px;
