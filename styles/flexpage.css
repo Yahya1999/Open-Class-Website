@@ -28,23 +28,28 @@ html {
 .menu li {
     padding: 8px;
     margin-bottom: 7px;
-    background-color: #000000;
+    background-color: #2b2b2b;
     color: #ffffff;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 .menu li:hover {
-    background-color: #000000;
+    background-color: #2b2b2b;
 }
 .aside {
-    background-color: #000000;
+    background-color: #2b2b2b;
     padding: 15px;
     color: #ffffff;
-    text-align: center;
     font-size: 14px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    box-shadow: 15px 1px 3px rgba(0,0,0,0.12), 15 1px 2px rgba(0,0,0,0.24);
+    align-content:right;
+}
+.aside a{
+    color: #ffffff;
+    text-decoration: none;
+    text-decoration: underline;
 }
 .footer {
-    background-color: #2b2b2b;
+    background-color: #000000;
     color: #ffffff;
     text-align: center;
     font-size: 12px;
@@ -70,6 +75,12 @@ html {
     .col-m-10 {width: 83.33%;}
     .col-m-11 {width: 91.66%;}
     .col-m-12 {width: 100%;}
+    .largelist {
+        -webkit-columns: 100px 2; /* Chrome, Safari, Opera */
+        -moz-columns: 100px 2; /* Firefox */
+        columns: 100px 2;
+        list-style: none;
+    }
 }
 @media only screen and (min-width: 768px) { /*use these if screen is 768+px wide*/
     /* For desktop: */
@@ -86,4 +97,10 @@ html {
     .col-10 {width: 83.33%;}
     .col-11 {width: 91.66%;}
     .col-12 {width: 100%;}
+    .largelist {
+        -webkit-columns: 100px 3; /* Chrome, Safari, Opera */
+        -moz-columns: 100px 3; /* Firefox */
+        columns: 100px 3;
+        list-style: none;
+    }
 }
